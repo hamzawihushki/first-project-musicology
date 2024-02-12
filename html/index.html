@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/master.css" />
+    <!--  import bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+
+    <title>Musicology</title>
+  </head>
+  <body>
+    <div class="loader-cont"></div>
+    <div id="loader"></div>
+    <!---- NAV ---->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary position-fixed top-0"
+        id="nav"
+      >
+        <div class="container-fluid px-5">
+          <div class="d-flex justify-content-between" style="width: 100%">
+            <a class="navbar-brand" href="#"
+              ><img src="../img/logo.png" alt="" width="90px"
+            /></a>
+            <button
+              class="navbar-toggler rounded-0 border-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav m-auto">
+                <ul class="d-lg-flex m-0 d-sm-block">
+                  <li style="list-style: none">
+                    <a class="nav-link" aria-current="page" href="#home"
+                      >HOME</a
+                    >
+                  </li>
+                  <li style="list-style: none">
+                    <a class="nav-link" aria-current="page" href="#dance-tour"
+                      >DANCE TOUR</a
+                    >
+                  </li>
+                  <li style="list-style: none">
+                    <a class="nav-link" aria-current="page" href="#pricing"
+                      >PRICING</a
+                    >
+                  </li>
+                  <li style="list-style: none">
+                    <a class="nav-link" aria-current="page" href="#about"
+                      >about</a
+                    >
+                  </li>
+                  <li style="list-style: none">
+                    <a
+                      class="nav-link"
+                      aria-current="page"
+                      href="#our-statistic"
+                      >OUR STATISTIC</a
+                    >
+                  </li>
+                  <li style="list-style: none">
+                    <a class="nav-link" aria-current="page" href="#subscribe"
+                      >SUBSCRIBE</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <a class="navbar-brand" href="#">
+              <img src="../img/icons8-search-64.png" alt="" width="30px" />
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--// NAV //-->
+    <!---- HERO SECTION ---->
+    <section class="hero-cont" id="home">
+      <div class="container-fluid p-0 m-0 w-100">
+        <div class="row p-0 m-0">
+          <div class="col-12 p-0 m-0 w-100">
+            <ul id="testSlider">
+              <li>
+                <img src="../img/hero.png" alt="" class="img-hero" />
+
+                <div class="hero d-sm-flex" data-aos="fade-right">
+                  <div class="text-wrapper container-fluid col-12 w-50">
+                    <h1
+                      data-aos="fade-right"
+                      data-aos-duration="80000"
+                      data-aos-delay="8000"
+                    >
+                      Visca Barca
+                    </h1>
+                    <p data-aos="fade-right" data-aos-duration="1500">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Adipisci dolore voluptatum reiciendis cum sint
+                    </p>
+                    <button>Register Now</button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <img src="../img/herbert.png" alt="" class="img-hero" />
+
+                <div class="hero d-sm-flex">
+                  <div class="text-wrapper container-fluid col-12 w-50">
+                    <h1>Creative</h1>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Adipisci dolore voluptatum reiciendis cum sint
+                    </p>
+                    <button>Register Now</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----// HERO SECTION //---->
+    <!-- --DANCE TOUR SECTION-- -->
+    <section id="dance-tour">
+      <div class="dance-tour container-fluid">
+        <img src="../img/Shape.png" class="shape" alt="" />
+        <div class="container">
+          <div
+            class="details-section container m-auto text-center text-light"
+            data-aos="fade-down"
+            data-aos-offset="200"
+            data-aos-duration="200"
+          >
+            <h1>dance tour</h1>
+            <p data-aos="fade-up" data-aos-offset="100">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              lacinia odio vitae vestibulum vestibulum.
+            </p>
+          </div>
+          <div class="row">
+            <div
+              class="col-lg-4 col-md-6 mb-md-5 col-sm-8 mx-sm-auto mb-sm-4"
+              data-aos="fade-up"
+              data-aos-offset="100"
+            >
+              <div class="card" style="width: 18rem; border: 0">
+                <img
+                  src="../img/dance-style.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h3>america</h3>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 mb-md-5 col-sm-8 mx-sm-auto mb-sm-4"
+              data-aos="fade-up"
+              data-aos-offset="100"
+            >
+              <div class="card" style="width: 18rem; border: 0">
+                <img src="../img/asia.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h3>australia</h3>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 mb-md-5 col-sm-8 mx-sm-auto mb-sm-4"
+              data-aos="fade-up"
+              data-aos-offset="100"
+            >
+              <div class="card" style="width: 18rem; border: 0">
+                <img
+                  src="../img/austraila.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h3>asia</h3>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- --//DANCE TOUR SECTION//-- -->
+    <!-- --PROCING-- -->
+    <section id="pricing">
+      <div class="pricing container-fluid">
+        <img src="../img/Shape.png" class="shape" alt="" />
+        <div class="container">
+          <div
+            class="details-section container container m-auto text-center text-light"
+            data-aos="fade-down"
+            data-aos-offset="200"
+            data-aos-duration="200"
+          >
+            <h1 class="container">pricing</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              lacinia odio vitae vestibulum vestibulum.
+            </p>
+          </div>
+          <div class="row">
+            <div
+              class="col-lg-4 col-md-6 mb-md-5 mx-sm-auto mb-sm-4 car"
+              data-aos="fade-right"
+              data-aos-delay="0"
+            >
+              <div class="card card-pricing" style="width: 18rem; border: 0">
+                <img src="../img/pricing.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h3>basic</h3>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <button type="button" class="btn w-100">$200.00</button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 mb-md-5 col-sm-8 mx-sm-auto mb-sm-4 car"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="card card-pricing" style="width: 18rem; border: 0">
+                <img src="../img/pricing.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h3>Ultimate</h3>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <button type="button" class="btn w-100">$270.00</button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 mb-md-5 col-sm-8 mx-sm-auto mb-sm-4 car"
+              data-aos="fade-left"
+              data-aos-delay="400"
+            >
+              <div class="card card-pricing" style="width: 18rem; border: 0">
+                <img src="../img/pricing.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h3>Professional</h3>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <button type="button" class="btn w-100">$250.00</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- --//PROCING//-- -->
+    <!-- --INFO DANCING -->
+    <section id="about">
+      <div class="info-dance text-light">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 p-0">
+              <img
+                src="../img/amazing.png"
+                alt=""
+                class="dance-image"
+                width="100%"
+                data-aos="flip-left"
+              />
+            </div>
+            <div class="col-md-6 p-0">
+              <div class="info-details">
+                <h1>AMAZING DANCE</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vivamus lacinia odio vitae vestibulum vestibulum.
+                </p>
+                <button>read more</button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 p-0">
+              <div class="info-details">
+                <h1>BEST DANCE</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vivamus lacinia odio vitae vestibulum vestibulum.
+                </p>
+                <button>read more</button>
+              </div>
+            </div>
+            <div class="col-md-6 p-0">
+              <img
+                data-aos="flip-right"
+                src="../img/best.png"
+                alt=""
+                class="dance-image"
+                width="100%"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- --//INFO DANCING// -->
+    <!-- --Our Statistics-- -->
+    <section id="our-statistic">
+      <div class="statistics">
+        <div class="container-fluid">
+          <div
+            class="details-section container container m-auto text-center text-light container-fluid"
+            data-aos="fade-down"
+            data-aos-easing="ease"
+            data-aos-duration="1100"
+          >
+            <h1>Our Statistics</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              lacinia odio vitae vestibulum vestibulum.
+            </p>
+          </div>
+          <div class="row text-light statisic-value">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+              <div
+                class="d-flex flex-column justify-content-center align-items-md-center"
+              >
+                <h1 class="counter" data-counter="1036">0</h1>
+                <p>Club</p>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+              <div
+                class="d-flex flex-column justify-content-center align-items-md-center"
+              >
+                <h1 class="counter" data-counter="10">0</h1>
+                <p>Active Member</p>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+              <div
+                class="d-flex flex-column justify-content-center align-items-md-center"
+              >
+                <h1 class="counter" data-counter="136">0</h1>
+                <p>Community</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- --//Our Statistics//-- -->
+    <!-- --herbert--  -->
+    <section>
+      <div class="container-fluid herbert">
+        <div class="layout"></div>
+        <div class="text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            lacinia odio vitae vestibulum vestibulum.
+          </p>
+          <h1>Herbert Simon</h1>
+        </div>
+      </div>
+    </section>
+    <!-- --//herbert//--  -->
+    <!-- --SUBSCRIBE -->
+    <section id="subscribe">
+      <div class="sub">
+        <div class="container">
+          <div
+            class="details-section container container m-auto text-center text-light"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="500"
+          >
+            <h1>SUBSCRIBE</h1>
+            <p class="px-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              lacinia odio vitae vestibulum vestibulum.
+            </p>
+          </div>
+          <form action="" class="col-9 m-auto">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control rounded-0"
+                placeholder="Your Email"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+              />
+              <button
+                class="btn btn-secondary rounded-0 sub-btn"
+                type="button"
+                id="button-addon2"
+              >
+                SUBSCRIBE
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- --//SUBSCRIBE// -->
+
+    <!-- --FOOTER-- -->
+    <footer>
+      <div class="about">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <h4 class="pb-3">Musicology</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at
+                dignissim enim.
+              </p>
+              <div class="social">
+                <ul class="social-list d-flex">
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="../img/social/icons8-facebook-messenger-48.png"
+                        alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="../img/social/icons8-github-48.png" alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="../img/social/icons8-twitter-circled-48.png"
+                        alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="../img/social/icons8-whatsapp-48.png" alt=""
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <h4 class="pb-3">ABOUT</h4>
+
+              <div class="social">
+                <ul class="social-list">
+                  <li>
+                    <a href="#">History</a>
+                  </li>
+                  <li>
+                    <a href="#">Our Team</a>
+                  </li>
+                  <li>
+                    <a href="#">Brand Guidelines</a>
+                  </li>
+                  <li>
+                    <a href="#">Terms & Condition</a>
+                  </li>
+                  <li>
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <h4 class="pb-3">Services</h4>
+
+              <div class="social">
+                <ul class="social-list">
+                  <li>
+                    <a href="#">How to Order</a>
+                  </li>
+                  <li>
+                    <a href="#">Our Product</a>
+                  </li>
+                  <li>
+                    <a href="#">Brand Guidelines</a>
+                  </li>
+                  <li>
+                    <a href="#">Terms & Condition</a>
+                  </li>
+                  <li>
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <h4 class="pb-3">Other</h4>
+
+              <div class="social">
+                <ul class="social-list">
+                  <li>
+                    <a href="#">Contact Us</a>
+                  </li>
+                  <li>
+                    <a href="#">Help</a>
+                  </li>
+                  <li>
+                    <a href="#">Privacy</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- --//FOOTER//-- -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init();
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
+    <script src="../js/index.js"></script>
+  </body>
+</html>
