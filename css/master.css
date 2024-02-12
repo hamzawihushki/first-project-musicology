@@ -6,7 +6,7 @@ body {
   padding: 0%;
   scroll-behavior: smooth;
   margin: 0;
-  overflow-y: hidden !important;
+  overflow-x: hidden !important;
 }
 
 html {
@@ -18,6 +18,10 @@ html {
 /* hero start  */
 header {
   z-index: 2000;
+}
+
+section {
+  overflow-x: hidden !important;
 }
 
 #nav {
