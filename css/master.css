@@ -20,9 +20,7 @@ header {
   z-index: 2000;
 }
 
-section {
-  overflow-x: hidden !important;
-}
+
 
 #nav {
   background-color: #303030 !important;
