@@ -68,8 +68,14 @@ window.addEventListener("load", function () {
   setTimeout(function () {
     spinner.stop();
     document.querySelector(".content").style.display = "block";
-  }, 1000);
+  }, 2000);
 });
 setInterval(() => {
   document.querySelector(".loader-cont").style.display = "none";
-}, 1000);
+}, 2000);
+function openWhatsApp() {
+  // Replace PHONE_NUMBER_HERE with your phone number
+  var phoneNumber = "0772756325"; // Replace with your phone number
+  var url = "https://wa.me/" + phoneNumber;
+  window.location.href = url;
+}
