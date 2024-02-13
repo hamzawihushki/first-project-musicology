@@ -68,8 +68,8 @@ window.addEventListener("load", function () {
   setTimeout(function () {
     spinner.stop();
     document.querySelector(".content").style.display = "block";
-  }, 2000);
+  }, 1000);
 });
 setInterval(() => {
   document.querySelector(".loader-cont").style.display = "none";
-}, 2000);
+}, 1000);

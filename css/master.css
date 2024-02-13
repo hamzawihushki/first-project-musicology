@@ -646,3 +646,19 @@ header {
     text-shadow: 0 0 .5px;
   }
 }
+
+/* For WebKit (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  width: 12px;
+  /* width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #131313;
+  /* color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a14615;
+  /* color of the scrollbar */
+}
