@@ -81,7 +81,7 @@ function openWhatsApp() {
 }
 $("#about-slider").slick({
   autoplay: true,  // Enable autoplay
-  autoplaySpeed: 30000, // Autoplay speed in milliseconds (3 seconds)
+  autoplaySpeed: 3000, // Autoplay speed in milliseconds (3 seconds)
   arrows: false,  // Hide navigation arrows (optional)
   dots: false,
   infinite: true,
