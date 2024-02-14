@@ -312,7 +312,6 @@ header {
 .statistics {
   padding: 200px 0 100px;
   background-color: #303030;
-  transition: 3s;
 }
 
 .statistics p {
@@ -400,6 +399,21 @@ header {
 .about .social-list a {
   text-decoration: none !important;
   color: #fff !important;
+  transition: .2s !important;
+  cursor: "pointer" !important;
+}
+
+.about .social-list a:hover {
+  text-decoration: none !important;
+  color: #a14615 !important;
+}
+
+.about .social-list li a img {
+  transition: .1s !important;
+}
+
+.about .social-list li a img:hover {
+  filter: invert(3) !important;
 }
 
 .navbar-toggler:focus {
@@ -407,29 +421,6 @@ header {
   box-shadow: 0 0 0 !important;
 }
 
-label {
-  font-family: "Oswald";
-}
-
-.form-control {
-  background-color: #00000017 !important;
-  border: solid 1px #a14615 !important;
-  color: #929292 !important;
-}
-
-.subscribe-btn {
-  background-color: #d3d3d3 !important;
-}
-
-.form-control:focus {
-  border: solid 1px #a14615 !important;
-  box-shadow: 0 0 5px 0px #d84c00 !important
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: #929292 !important;
-}
 
 
 /* footer end */
@@ -705,4 +696,82 @@ textarea::placeholder {
 ::-webkit-scrollbar-thumb {
   background: #a14615;
   /* color of the scrollbar */
+}
+
+.contact-details {
+  height: 400px;
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  background-color: #303030;
+  padding: 30px;
+}
+
+.contact-details .sub-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #fff
+}
+
+.det-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loc {
+  font-weight: 900;
+  font-size: 40px;
+  padding: 10px 15px;
+  background: chocolate;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.contact-details .sub-contact p {
+  font-size: 12px;
+}
+
+.contact-details .sub-contact p a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.contact-details .sub-contact p a:hover {
+  color: #fff !important;
+  text-decoration: under;
+}
+
+.contact h1 {
+  color: #ff5b02
+}
+
+.message h2 {
+  color: #ff5b02 !important;
+}
+
+label {
+  font-family: "Oswald";
+}
+
+.form-control {
+  background-color: #00000017 !important;
+  border: solid 1px #a14615 !important;
+  color: #929292 !important;
+}
+
+.subscribe-btn {
+  background-color: #d3d3d3 !important;
+}
+
+.form-control:focus {
+  border: solid 1px #a14615 !important;
+  box-shadow: 0 0 5px 0px #d84c00 !important
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #929292 !important;
 }
