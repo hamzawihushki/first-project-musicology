@@ -381,7 +381,7 @@ header {
 /* sub end */
 /* footer start */
 .about {
-  padding: 10px 0 50px !important;
+  padding: 100px 10px !important;
   background-color: #303030;
   color: #fff;
 }
@@ -422,7 +422,9 @@ header {
 }
 
 
-
+.copy{
+  background-color: #131313;
+}
 /* footer end */
 .next,
 .prev {
@@ -699,12 +701,11 @@ header {
 }
 
 .contact-details {
-  height: 400px;
   display: flex;
   margin-top: 50px;
   align-items: center;
   background-color: #303030;
-  padding: 30px;
+  padding: 100px 0;
 }
 
 .contact-details .sub-contact {
@@ -729,26 +730,31 @@ header {
   color: #fff;
   border-radius: 2px;
 }
-
+.location{
+  height: 400px;
+  padding: 20px;
+}
 .contact-details .sub-contact p {
   font-size: 12px;
 }
 
 .contact-details .sub-contact p a {
   color: #fff !important;
+  transition: .1s;
   text-decoration: none;
 }
 
 .contact-details .sub-contact p a:hover {
-  color: #fff !important;
-  text-decoration: under;
+  color: #a14615 !important;
+
+  text-decoration: underline;
 }
 
 .contact h1 {
   color: #ff5b02
 }
 
-.message h2 {
+.message h1 {
   color: #ff5b02 !important;
 }
 
@@ -757,11 +763,10 @@ label {
 }
 
 .form-control {
-  background-color: #00000017 !important;
-  border: solid 1px #a14615 !important;
-  color: #929292 !important;
+  background-color: #00000000 !important;
+  border: solid 1px #a146153b !important;
+  color: #000000 !important;
 }
-
 .subscribe-btn {
   background-color: #d3d3d3 !important;
 }
