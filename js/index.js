@@ -73,12 +73,7 @@ window.addEventListener("load", function () {
 setInterval(() => {
   document.querySelector(".loader-cont").style.display = "none";
 }, 2000);
-function openWhatsApp() {
-  // Replace PHONE_NUMBER_HERE with your phone number
-  var phoneNumber = "0772756325"; // Replace with your phone number
-  var url = "https://wa.me/" + phoneNumber;
-  window.location.href = url;
-}
+
 $("#about-slider").slick({
   autoplay: true, // Enable autoplay
   autoplaySpeed: 3000, // Autoplay speed in milliseconds (3 seconds)
@@ -129,13 +124,45 @@ window.addEventListener("load", function () {
 setInterval(() => {
   document.querySelector(".loader-cont").style.display = "none";
 }, 2000);
-function openWhatsApp() {
-  // Replace PHONE_NUMBER_HERE with your phone number
-  var phoneNumber = "0772756325"; // Replace with your phone number
-  var url = "https://wa.me/" + phoneNumber;
-  window.location.href = url;
-}
+
 $("#feedback-slider").slick({
+  autoplay: true, // Enable autoplay
+  autoplaySpeed: 2000, // Autoplay speed in milliseconds (3 seconds)
+  arrows: false, // Hide navigation arrows (optional)
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ],
+});
+$("#news-slider").slick({
   autoplay: true, // Enable autoplay
   autoplaySpeed: 2000, // Autoplay speed in milliseconds (3 seconds)
   arrows: false, // Hide navigation arrows (optional)
