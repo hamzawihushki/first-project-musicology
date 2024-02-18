@@ -82,6 +82,7 @@ header {
   font-size: 42px;
   z-index: 200;
   transition: .2s;
+  color: #fff !important;
   cursor: pointer;
 }
 
@@ -101,7 +102,7 @@ header {
 
 .slick-next:hover,
 .slick-prev:hover {
-  color: #a14615;
+  color: #a14615 !important;
 }
 
 .text-wrapper {
@@ -192,11 +193,16 @@ header {
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Oswald";
-  font-size: 75px;
+  font-size: 60px;
+}
+
+.ticker-inner {
+  white-space: nowrap;
+  animation: ticker-animation 31s linear infinite !important;
 }
 
 .details-section p {
-  font-size: 30px;
+  font-size: 22px;
   backdrop-filter: blur(1px);
 }
 
