@@ -199,3 +199,20 @@ $("#news-slider").slick({
     // instead of a settings object
   ],
 });
+$("#main-slider").slick({
+  asNavFor: "#synced-slider", // Link to synced slider
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  adaptiveHeight: true,
+});
+
+// Initialize synced slider
+$("#synced-slider").slick({
+  asNavFor: "#main-slider", // Link to main slider
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  centerMode: true,
+  focusOnSelect: true,
+});
