@@ -1,571 +1,470 @@
 !
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
-      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="../css/master.css" />
-    <!--  import bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-    />
-    <title>News Details</title>
-  </head>
 
-  <body>
-    <!-- <div class="loader-cont"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../css/master.css" />
+  <!--  import bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <title>News Details</title>
+</head>
+
+<body>
+  <!-- <div class="loader-cont"></div>
     <div id="loader"></div> -->
-    <!---- NAV ---->
-    <header>
-      <nav
-        class="navbar navbar-expand-lg bg-body-tertiary position-fixed top-0"
-        id="nav"
-      >
-        <div class="container-fluid px-lg-5 px-md-3">
-          <div class="d-flex justify-content-between" style="width: 100%">
-            <a class="navbar-brand" href="#"
-              ><img src="../img/logo.png" alt="" width="90px"
-            /></a>
+  <!---- NAV ---->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed top-0" id="nav">
+      <div class="container-fluid px-lg-5 px-md-3">
+        <div class="d-flex justify-content-between" style="width: 100%">
+          <a class="navbar-brand" href="#"><img src="../img/logo.png" alt="" width="90px" /></a>
 
-            <button
-              class="navbar-toggler rounded-0 border-0"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon order-3"></span>
-            </button>
-            <div
-              data-aos="fade-down"
-              data-aos-offset="200"
-              data-aos-duration="200"
-              class="collapse navbar-collapse"
-              id="navbarNavAltMarkup"
-            >
-              <div class="navbar-nav m-auto">
-                <ul class="d-lg-flex m-0 d-sm-block">
-                  <li style="list-style: none">
-                    <a class="nav-link" aria-current="page" href="../index.html"
-                      >HOME</a
-                    >
-                  </li>
-                  <li style="list-style: none">
-                    <a class="nav-link" aria-current="page" href="#dance-tour"
-                      >DANCE TOUR</a
-                    >
-                  </li>
-                  <li style="list-style: none">
-                    <a class="nav-link" aria-current="page" href="#pricing"
-                      >PRICING</a
-                    >
-                  </li>
-                  <li style="list-style: none">
-                    <a class="nav-link" aria-current="page" href="#about"
-                      >about</a
-                    >
-                  </li>
-                  <li style="list-style: none">
-                    <a
-                      class="nav-link"
-                      aria-current="page"
-                      href="#our-statistic"
-                      >OUR STATISTIC</a
-                    >
-                  </li>
-                  <li style="list-style: none">
-                    <a class="nav-link" aria-current="page" href="#subscribe"
-                      >SUBSCRIBE</a
-                    >
-                  </li>
-                </ul>
-              </div>
+          <button class="navbar-toggler rounded-0 border-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon order-3"></span>
+          </button>
+          <div data-aos="fade-down" data-aos-offset="200" data-aos-duration="200" class="collapse navbar-collapse"
+            id="navbarNavAltMarkup">
+            <div class="navbar-nav m-auto">
+              <ul class="d-lg-flex m-0 d-sm-block">
+                <li style="list-style: none">
+                  <a class="nav-link" aria-current="page" href="../index.html">HOME</a>
+                </li>
+                <li style="list-style: none">
+                  <a class="nav-link" aria-current="page" href="#dance-tour">DANCE TOUR</a>
+                </li>
+                <li style="list-style: none">
+                  <a class="nav-link" aria-current="page" href="#pricing">PRICING</a>
+                </li>
+                <li style="list-style: none">
+                  <a class="nav-link" aria-current="page" href="#about">about</a>
+                </li>
+                <li style="list-style: none">
+                  <a class="nav-link" aria-current="page" href="#our-statistic">OUR STATISTIC</a>
+                </li>
+                <li style="list-style: none">
+                  <a class="nav-link" aria-current="page" href="#subscribe">SUBSCRIBE</a>
+                </li>
+              </ul>
             </div>
-            <a class="navbar-brand" href="#">
-              <img src="../img/icons8-search-64.png" alt="" width="30px" />
-            </a>
+          </div>
+          <a class="navbar-brand" href="#">
+            <img src="../img/icons8-search-64.png" alt="" width="30px" />
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--// NAV //-->
+  <!-- hot news -->
+  <section>
+    <div class="contact-details m-0 p-0" data-aos="fade-down" data-aos-offset="200" data-aos-duration="200"
+      style="overflow-x: hidden">
+      <div class="container-fluid">
+        <div class="row p-0 m-0">
+          <div class="col-12 p-0 m-0 w-100">
+            <ul id="main-slider" class="p-0" style="height: 200vh">
+              <li>
+                <img src="../img/gaza.jpg" alt="" class="img-details" style="height: 34%" />
+                <div class="details-section container container m-auto text-light py-4">
+                  <h1>Free Palestine</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vivamus lacinia odio vitae vestibulum vestibulum.
+                  </p>
+                  <hr />
+                  <h2 class="pe-5">gaza</h2>
+                  <p class="sub-news-details" data-aos="fade-down" data-aos-offset="200" data-aos-duration="200">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores asperiores perspiciatis dolore, laborum ab minus
+                    aliquam eos sapiente adipisci praesentium consequuntur
+                    voluptas quibusdam nemo officia deserunt magnam cupiditate
+                    unde eveniet. Dolor iusto optio neque cum unde. Deserunt,
+                    cupiditate eveniet ut ducimus recusandae architecto animi
+                    hic obcaecati unde rerum, eius tenetur porro ullam
+                    veritatis quibusdam, perferendis fuga quasi perspiciatis!
+                    Voluptatibus, reprehenderit. Id quae enim numquam,
+                    repellendus quam porro, deleniti doloremque unde dolorem
+                    assumenda vitae ex quisquam placeat vel illo totam quaerat
+                    natus. Vel eaque laudantium temporibus. Excepturi minus
+                    cupiditate laborum veritatis. Laboriosam numquam beatae
+                    fugiat reprehenderit vero id voluptatem eos optio ipsa
+                    consectetur, atque sit sint reiciendis, porro veritatis
+                    earum repellendus tempora rem et rerum nisi corporis modi!
+                    Nostrum, possimus ad? Soluta, nemo sapiente? Reiciendis
+                    fuga, quia qui maxime excepturi voluptates obcaecati saepe
+                    ex accusamus fugiat perferendis incidunt velit dolorum
+                    ipsa quisquam corrupti cumque necessitatibus et aliquam
+                    accusantium voluptatem, amet eveniet.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <img src="../img/amr.jpg" alt="" class="img-details" style="height: 34%" />
+                <div class="details-section container container m-auto text-light py-4">
+                  <h1>suiiii</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vivamus lacinia odio vitae vestibulum vestibulum.
+                  </p>
+                  <hr />
+                  <h2 class="pe-5">gaza</h2>
+                  <p class="sub-news-details">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores asperiores perspiciatis dolore, laborum ab minus
+                    aliquam eos sapiente adipisci praesentium consequuntur
+                    voluptas quibusdam nemo officia deserunt magnam cupiditate
+                    unde eveniet. Dolor iusto optio neque cum unde. Deserunt,
+                    cupiditate eveniet ut ducimus recusandae architecto animi
+                    hic obcaecati unde rerum, eius tenetur porro ullam
+                    veritatis quibusdam, perferendis fuga quasi perspiciatis!
+                    Voluptatibus, reprehenderit. Id quae enim numquam,
+                    repellendus quam porro, deleniti doloremque unde dolorem
+                    assumenda vitae ex quisquam placeat vel illo totam quaerat
+                    natus. Vel eaque laudantium temporibus. Excepturi minus
+                    cupiditate laborum veritatis. Laboriosam numquam beatae
+                    fugiat reprehenderit vero id voluptatem eos optio ipsa
+                    consectetur, atque sit sint reiciendis, porro veritatis
+                    earum repellendus tempora rem et rerum nisi corporis modi!
+                    Nostrum, possimus ad? Soluta, nemo sapiente? Reiciendis
+                    fuga, quia qui maxime excepturi voluptates obcaecati saepe
+                    ex accusamus fugiat perferendis incidunt velit dolorum
+                    ipsa quisquam corrupti cumque necessitatibus et aliquam
+                    accusantium voluptatem, amet eveniet. Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Maiores asperiores
+                    perspiciatis dolore, laborum ab minus aliquam eos sapiente
+                    adipisci praesentium consequuntur voluptas quibusdam nemo
+                    officia deserunt magnam cupiditate unde eveniet. Dolor
+                    iusto optio neque cum unde. Deserunt, cupiditate eveniet
+                    ut ducimus recusandae architecto animi hic obcaecati unde
+                    rerum, eius tenetur porro ullam veritatis quibusdam,
+                    perferendis fuga quasi perspiciatis! Voluptatibus,
+                    reprehenderit. Id quae enim numquam, repellendus quam
+                    porro, deleniti doloremque unde dolorem assumenda vitae ex
+                    quisquam placeat vel illo totam quaerat natus. Vel eaque
+                    laudantium temporibus. Excepturi minus cupiditate laborum
+                    veritatis. Laboriosam numquam beatae fugiat reprehenderit
+                    vero id voluptatem eos optio ipsa consectetur, atque sit
+                    sint reiciendis, porro veritatis earum repellendus tempora
+                    rem et rerum nisi corporis modi! Nostrum, possimus ad?
+                    Soluta, nemo sapiente? Reiciendis fuga, quia qui maxime
+                    excepturi voluptates obcaecati saepe ex accusamus fugiat
+                    perferendis incidunt velit dolorum ipsa quisquam corrupti
+                    cumque necessitatibus et aliquam accusantium voluptatem,
+                    amet eveniet. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Maiores asperiores perspiciatis dolore,
+                    laborum ab minus aliquam eos sapiente adipisci praesentium
+                    consequuntur voluptas quibusdam nemo officia deserunt
+                    magnam cupiditate unde eveniet. Dolor iusto optio neque
+                    cum unde. Deserunt, cupiditate eveniet ut ducimus
+                    recusandae architecto animi hic obcaecati unde rerum, eius
+                    tenetur porro ullam veritatis quibusdam, perferendis fuga
+                    quasi perspiciatis! Voluptatibus, reprehenderit. Id quae
+                    enim numquam, repellendus quam porro, deleniti doloremque
+                    unde dolorem assumenda vitae ex quisquam placeat vel illo
+                    totam quaerat natus. Vel eaque laudantium temporibus.
+                    Excepturi minus cupiditate laborum veritatis. Laboriosam
+                    numquam beatae fugiat reprehenderit vero id voluptatem eos
+                    optio ipsa consectetur, atque sit sint reiciendis, porro
+                    veritatis earum repellendus tempora rem et rerum nisi
+                    corporis modi! Nostrum, possimus ad? Soluta, nemo
+                    sapiente? Reiciendis fuga, quia qui maxime excepturi
+                    voluptates obcaecati saepe ex accusamus fugiat perferendis
+                    incidunt velit dolorum ipsa quisquam corrupti cumque
+                    necessitatibus et aliquam accusantium voluptatem, amet
+                    eveniet.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <img src="../img/ronaldinho-ac-milan-2010_2448415.jpg" alt="" class="img-details" style="height: 34%" />
+                <div class="details-section container container m-auto text-light py-4">
+                  <h1>Forza Milan</h1>
+                  <p>milano none milano itailya is millano.</p>
+                  <hr />
+                  <h2 class="pe-5">gaza</h2>
+                  <p class="sub-news-details">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores asperiores perspiciatis dolore, laborum ab minus
+                    aliquam eos sapiente adipisci praesentium consequuntur
+                    voluptas quibusdam nemo officia deserunt magnam cupiditate
+                    unde eveniet. Dolor iusto optio neque cum unde. Deserunt,
+                    cupiditate eveniet ut ducimus recusandae architecto animi
+                    hic obcaecati unde rerum, eius tenetur porro ullam
+                    veritatis quibusdam, perferendis fuga quasi perspiciatis!
+                    Voluptatibus, reprehenderit. Id quae enim numquam,
+                    repellendus quam porro, deleniti doloremque unde dolorem
+                    assumenda vitae ex quisquam placeat vel illo totam quaerat
+                    natus. Vel eaque laudantium temporibus. Excepturi minus
+                    cupiditate laborum veritatis. Laboriosam numquam beatae
+                    fugiat reprehenderit vero id voluptatem eos optio ipsa
+                    consectetur, atque sit sint reiciendis, porro veritatis
+                    earum repellendus tempora rem et rerum nisi corporis modi!
+                    Nostrum, possimus ad? Soluta, nemo sapiente? Reiciendis
+                    fuga, quia qui maxime excepturi voluptates obcaecati saepe
+                    ex accusamus fugiat perferendis incidunt velit dolorum
+                    ipsa quisquam corrupti cumque necessitatibus et aliquam
+                    accusantium voluptatem, amet eveniet. Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Maiores asperiores
+                    perspiciatis dolore, laborum ab minus aliquam eos sapiente
+                    adipisci praesentium consequuntur voluptas quibusdam nemo
+                    officia deserunt magnam cupiditate unde eveniet. Dolor
+                    iusto optio neque cum unde. Deserunt, cupiditate eveniet
+                    ut ducimus recusandae architecto animi hic obcaecati unde
+                    rerum, eius tenetur porro ullam veritatis quibusdam,
+                    perferendis fuga quasi perspiciatis! Voluptatibus,
+                    reprehenderit. Id quae enim numquam, repellendus quam
+                    porro, deleniti doloremque unde dolorem assumenda vitae ex
+                    quisquam placeat vel illo totam quaerat natus. Vel eaque
+                    laudantium temporibus. Excepturi minus cupiditate laborum
+                    veritatis. Laboriosam numquam beatae fugiat reprehenderit
+                    vero id voluptatem eos optio ipsa consectetur, atque sit
+                    sint reiciendis, porro veritatis earum repellendus tempora
+                    rem et rerum nisi corporis modi! Nostrum, possimus ad?
+                    Soluta, nemo sapiente? Reiciendis fuga, quia qui maxime
+                    excepturi voluptates obcaecati saepe ex accusamus fugiat
+                    perferendis incidunt velit dolorum ipsa quisquam corrupti
+                    cumque necessitatibus et aliquam accusantium voluptatem,
+                    amet eveniet. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Maiores asperiores perspiciatis dolore,
+                    laborum ab minus aliquam eos sapiente adipisci praesentium
+                    consequuntur voluptas quibusdam nemo officia deserunt
+                    magnam cupiditate unde eveniet. Dolor iusto optio neque
+                    cum unde. Deserunt, cupiditate eveniet ut ducimus
+                    recusandae architecto animi hic obcaecati unde rerum, eius
+                    tenetur porro ullam veritatis quibusdam, perferendis fuga
+                    quasi perspiciatis! Voluptatibus, reprehenderit. Id quae
+                    enim numquam, repellendus quam porro, deleniti doloremque
+                    unde dolorem assumenda vitae ex quisquam placeat vel illo
+                    totam quaerat natus. Vel eaque laudantium temporibus.
+                    Excepturi minus cupiditate laborum veritatis. Laboriosam
+                    numquam beatae fugiat reprehenderit vero id voluptatem eos
+                    optio ipsa consectetur, atque sit sint reiciendis, porro
+                    veritatis earum repellendus tempora rem et rerum nisi
+                    corporis modi! Nostrum, possimus ad? Soluta, nemo
+                    sapiente? Reiciendis fuga, quia qui maxime excepturi
+                    voluptates obcaecati saepe ex accusamus fugiat perferendis
+                    incidunt velit dolorum ipsa quisquam corrupti cumque
+                    necessitatibus et aliquam accusantium voluptatem, amet
+                    eveniet.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <img src="../img/herbert.png" alt="" class="img-details" style="height: 34%" />
+                <div class="details-section container container m-auto text-light py-4">
+                  <h1>camera wowo</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vivamus lacinia odio vitae vestibulum vestibulum.
+                  </p>
+                  <hr />
+                  <h2 class="pe-5">gaza</h2>
+                  <p class="sub-news-details">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores asperiores perspiciatis dolore, laborum ab minus
+                    aliquam eos sapiente adipisci praesentium consequuntur
+                    voluptas quibusdam nemo officia deserunt magnam cupiditate
+                    unde eveniet. Dolor iusto optio neque cum unde. Deserunt,
+                    cupiditate eveniet ut ducimus recusandae architecto animi
+                    hic obcaecati unde rerum, eius tenetur porro ullam
+                    veritatis quibusdam, perferendis fuga quasi perspiciatis!
+                    Voluptatibus, reprehenderit. Id quae enim numquam,
+                    repellendus quam porro, deleniti doloremque unde dolorem
+                    assumenda vitae ex quisquam placeat vel illo totam quaerat
+                  </p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
-      </nav>
-    </header>
-    <!--// NAV //-->
-    <!-- hot news -->
-    <section>
-      <div
-        class="contact-details m-0 p-0"
-        data-aos="fade-down"
-        data-aos-offset="200"
-        data-aos-duration="200"
-        style="overflow-x: hidden"
-      >
-        <div class="container-fluid">
-          <div class="row p-0 m-0">
-            <div class="col-12 p-0 m-0 w-100">
-              <ul id="main-slider" class="p-0" style="height: 200vh">
-                <li>
-                  <img
-                    src="../img/gaza.jpg"
-                    alt=""
-                    class="img-details"
-                    style="height: 34%"
-                  />
-                  <div
-                    class="details-section container container m-auto text-light py-4"
-                  >
-                    <h1>Free Palestine</h1>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Vivamus lacinia odio vitae vestibulum vestibulum.
-                    </p>
-                    <hr />
-                    <h2 class="pe-5">gaza</h2>
-                    <p
-                      class="sub-news-details"
-                      data-aos="fade-down"
-                      data-aos-offset="200"
-                      data-aos-duration="200"
-                    >
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Maiores asperiores perspiciatis dolore, laborum ab minus
-                      aliquam eos sapiente adipisci praesentium consequuntur
-                      voluptas quibusdam nemo officia deserunt magnam cupiditate
-                      unde eveniet. Dolor iusto optio neque cum unde. Deserunt,
-                      cupiditate eveniet ut ducimus recusandae architecto animi
-                      hic obcaecati unde rerum, eius tenetur porro ullam
-                      veritatis quibusdam, perferendis fuga quasi perspiciatis!
-                      Voluptatibus, reprehenderit. Id quae enim numquam,
-                      repellendus quam porro, deleniti doloremque unde dolorem
-                      assumenda vitae ex quisquam placeat vel illo totam quaerat
-                      natus. Vel eaque laudantium temporibus. Excepturi minus
-                      cupiditate laborum veritatis. Laboriosam numquam beatae
-                      fugiat reprehenderit vero id voluptatem eos optio ipsa
-                      consectetur, atque sit sint reiciendis, porro veritatis
-                      earum repellendus tempora rem et rerum nisi corporis modi!
-                      Nostrum, possimus ad? Soluta, nemo sapiente? Reiciendis
-                      fuga, quia qui maxime excepturi voluptates obcaecati saepe
-                      ex accusamus fugiat perferendis incidunt velit dolorum
-                      ipsa quisquam corrupti cumque necessitatibus et aliquam
-                      accusantium voluptatem, amet eveniet.
-                    </p>
-                  </div>
-                </li>
+      </div>
+    </div>
+    <!-- ---------------------------------------- -->
 
-                <li>
-                  <img
-                    src="../img/amr.jpg"
-                    alt=""
-                    class="img-details"
-                    style="height: 34%"
-                  />
-                  <div
-                    class="details-section container container m-auto text-light py-4"
-                  >
-                    <h1>suiiii</h1>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Vivamus lacinia odio vitae vestibulum vestibulum.
-                    </p>
-                    <hr />
-                    <h2 class="pe-5">gaza</h2>
-                    <p class="sub-news-details">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Maiores asperiores perspiciatis dolore, laborum ab minus
-                      aliquam eos sapiente adipisci praesentium consequuntur
-                      voluptas quibusdam nemo officia deserunt magnam cupiditate
-                      unde eveniet. Dolor iusto optio neque cum unde. Deserunt,
-                      cupiditate eveniet ut ducimus recusandae architecto animi
-                      hic obcaecati unde rerum, eius tenetur porro ullam
-                      veritatis quibusdam, perferendis fuga quasi perspiciatis!
-                      Voluptatibus, reprehenderit. Id quae enim numquam,
-                      repellendus quam porro, deleniti doloremque unde dolorem
-                      assumenda vitae ex quisquam placeat vel illo totam quaerat
-                      natus. Vel eaque laudantium temporibus. Excepturi minus
-                      cupiditate laborum veritatis. Laboriosam numquam beatae
-                      fugiat reprehenderit vero id voluptatem eos optio ipsa
-                      consectetur, atque sit sint reiciendis, porro veritatis
-                      earum repellendus tempora rem et rerum nisi corporis modi!
-                      Nostrum, possimus ad? Soluta, nemo sapiente? Reiciendis
-                      fuga, quia qui maxime excepturi voluptates obcaecati saepe
-                      ex accusamus fugiat perferendis incidunt velit dolorum
-                      ipsa quisquam corrupti cumque necessitatibus et aliquam
-                      accusantium voluptatem, amet eveniet. Lorem ipsum dolor
-                      sit amet consectetur adipisicing elit. Maiores asperiores
-                      perspiciatis dolore, laborum ab minus aliquam eos sapiente
-                      adipisci praesentium consequuntur voluptas quibusdam nemo
-                      officia deserunt magnam cupiditate unde eveniet. Dolor
-                      iusto optio neque cum unde. Deserunt, cupiditate eveniet
-                      ut ducimus recusandae architecto animi hic obcaecati unde
-                      rerum, eius tenetur porro ullam veritatis quibusdam,
-                      perferendis fuga quasi perspiciatis! Voluptatibus,
-                      reprehenderit. Id quae enim numquam, repellendus quam
-                      porro, deleniti doloremque unde dolorem assumenda vitae ex
-                      quisquam placeat vel illo totam quaerat natus. Vel eaque
-                      laudantium temporibus. Excepturi minus cupiditate laborum
-                      veritatis. Laboriosam numquam beatae fugiat reprehenderit
-                      vero id voluptatem eos optio ipsa consectetur, atque sit
-                      sint reiciendis, porro veritatis earum repellendus tempora
-                      rem et rerum nisi corporis modi! Nostrum, possimus ad?
-                      Soluta, nemo sapiente? Reiciendis fuga, quia qui maxime
-                      excepturi voluptates obcaecati saepe ex accusamus fugiat
-                      perferendis incidunt velit dolorum ipsa quisquam corrupti
-                      cumque necessitatibus et aliquam accusantium voluptatem,
-                      amet eveniet. Lorem ipsum dolor sit amet consectetur
-                      adipisicing elit. Maiores asperiores perspiciatis dolore,
-                      laborum ab minus aliquam eos sapiente adipisci praesentium
-                      consequuntur voluptas quibusdam nemo officia deserunt
-                      magnam cupiditate unde eveniet. Dolor iusto optio neque
-                      cum unde. Deserunt, cupiditate eveniet ut ducimus
-                      recusandae architecto animi hic obcaecati unde rerum, eius
-                      tenetur porro ullam veritatis quibusdam, perferendis fuga
-                      quasi perspiciatis! Voluptatibus, reprehenderit. Id quae
-                      enim numquam, repellendus quam porro, deleniti doloremque
-                      unde dolorem assumenda vitae ex quisquam placeat vel illo
-                      totam quaerat natus. Vel eaque laudantium temporibus.
-                      Excepturi minus cupiditate laborum veritatis. Laboriosam
-                      numquam beatae fugiat reprehenderit vero id voluptatem eos
-                      optio ipsa consectetur, atque sit sint reiciendis, porro
-                      veritatis earum repellendus tempora rem et rerum nisi
-                      corporis modi! Nostrum, possimus ad? Soluta, nemo
-                      sapiente? Reiciendis fuga, quia qui maxime excepturi
-                      voluptates obcaecati saepe ex accusamus fugiat perferendis
-                      incidunt velit dolorum ipsa quisquam corrupti cumque
-                      necessitatibus et aliquam accusantium voluptatem, amet
-                      eveniet.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <img
-                    src="../img/ronaldinho-ac-milan-2010_2448415.jpg"
-                    alt=""
-                    class="img-details"
-                    style="height: 34%"
-                  />
-                  <div
-                    class="details-section container container m-auto text-light py-4"
-                  >
-                    <h1>Forza Milan</h1>
-                    <p>milano none milano itailya is millano.</p>
-                    <hr />
-                    <h2 class="pe-5">gaza</h2>
-                    <p class="sub-news-details">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Maiores asperiores perspiciatis dolore, laborum ab minus
-                      aliquam eos sapiente adipisci praesentium consequuntur
-                      voluptas quibusdam nemo officia deserunt magnam cupiditate
-                      unde eveniet. Dolor iusto optio neque cum unde. Deserunt,
-                      cupiditate eveniet ut ducimus recusandae architecto animi
-                      hic obcaecati unde rerum, eius tenetur porro ullam
-                      veritatis quibusdam, perferendis fuga quasi perspiciatis!
-                      Voluptatibus, reprehenderit. Id quae enim numquam,
-                      repellendus quam porro, deleniti doloremque unde dolorem
-                      assumenda vitae ex quisquam placeat vel illo totam quaerat
-                      natus. Vel eaque laudantium temporibus. Excepturi minus
-                      cupiditate laborum veritatis. Laboriosam numquam beatae
-                      fugiat reprehenderit vero id voluptatem eos optio ipsa
-                      consectetur, atque sit sint reiciendis, porro veritatis
-                      earum repellendus tempora rem et rerum nisi corporis modi!
-                      Nostrum, possimus ad? Soluta, nemo sapiente? Reiciendis
-                      fuga, quia qui maxime excepturi voluptates obcaecati saepe
-                      ex accusamus fugiat perferendis incidunt velit dolorum
-                      ipsa quisquam corrupti cumque necessitatibus et aliquam
-                      accusantium voluptatem, amet eveniet. Lorem ipsum dolor
-                      sit amet consectetur adipisicing elit. Maiores asperiores
-                      perspiciatis dolore, laborum ab minus aliquam eos sapiente
-                      adipisci praesentium consequuntur voluptas quibusdam nemo
-                      officia deserunt magnam cupiditate unde eveniet. Dolor
-                      iusto optio neque cum unde. Deserunt, cupiditate eveniet
-                      ut ducimus recusandae architecto animi hic obcaecati unde
-                      rerum, eius tenetur porro ullam veritatis quibusdam,
-                      perferendis fuga quasi perspiciatis! Voluptatibus,
-                      reprehenderit. Id quae enim numquam, repellendus quam
-                      porro, deleniti doloremque unde dolorem assumenda vitae ex
-                      quisquam placeat vel illo totam quaerat natus. Vel eaque
-                      laudantium temporibus. Excepturi minus cupiditate laborum
-                      veritatis. Laboriosam numquam beatae fugiat reprehenderit
-                      vero id voluptatem eos optio ipsa consectetur, atque sit
-                      sint reiciendis, porro veritatis earum repellendus tempora
-                      rem et rerum nisi corporis modi! Nostrum, possimus ad?
-                      Soluta, nemo sapiente? Reiciendis fuga, quia qui maxime
-                      excepturi voluptates obcaecati saepe ex accusamus fugiat
-                      perferendis incidunt velit dolorum ipsa quisquam corrupti
-                      cumque necessitatibus et aliquam accusantium voluptatem,
-                      amet eveniet. Lorem ipsum dolor sit amet consectetur
-                      adipisicing elit. Maiores asperiores perspiciatis dolore,
-                      laborum ab minus aliquam eos sapiente adipisci praesentium
-                      consequuntur voluptas quibusdam nemo officia deserunt
-                      magnam cupiditate unde eveniet. Dolor iusto optio neque
-                      cum unde. Deserunt, cupiditate eveniet ut ducimus
-                      recusandae architecto animi hic obcaecati unde rerum, eius
-                      tenetur porro ullam veritatis quibusdam, perferendis fuga
-                      quasi perspiciatis! Voluptatibus, reprehenderit. Id quae
-                      enim numquam, repellendus quam porro, deleniti doloremque
-                      unde dolorem assumenda vitae ex quisquam placeat vel illo
-                      totam quaerat natus. Vel eaque laudantium temporibus.
-                      Excepturi minus cupiditate laborum veritatis. Laboriosam
-                      numquam beatae fugiat reprehenderit vero id voluptatem eos
-                      optio ipsa consectetur, atque sit sint reiciendis, porro
-                      veritatis earum repellendus tempora rem et rerum nisi
-                      corporis modi! Nostrum, possimus ad? Soluta, nemo
-                      sapiente? Reiciendis fuga, quia qui maxime excepturi
-                      voluptates obcaecati saepe ex accusamus fugiat perferendis
-                      incidunt velit dolorum ipsa quisquam corrupti cumque
-                      necessitatibus et aliquam accusantium voluptatem, amet
-                      eveniet.
-                    </p>
-                  </div>
-                </li>
+    <div class="slider-news-btn">
+      <ul id="synced-slider" class="p-0 d-flex justify-content-between">
+        <li>
+          <div class="img-news-btn-wrapper">
+            <img src="../img/gaza.jpg" alt="" class="i" />
+          </div>
+        </li>
+        <li>
+          <div class="img-news-btn-wrapper">
+            <img src="../img/amr.jpg" alt="" class="i" />
+          </div>
+        </li>
+        <li>
+          <div class="img-news-btn-wrapper">
+            <img src="../img/ronaldinho-ac-milan-2010_2448415.jpg" alt="" class="i" />
+          </div>
+        </li>
+        <li>
+          <div class="img-news-btn-wrapper">
+            <img src="../img/herbert.png" alt="" class="i" />
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!--// hot news //-->
+  <!-- grid-news -->
 
+  <!--// grid-news //-->
+
+  <!-- --FOOTER-- -->
+  <footer>
+    <div class="about" style="overflow: hidden">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <h4 class="pb-3">Musicology</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at
+              dignissim enim.
+            </p>
+            <div class="social">
+              <ul class="social-list d-flex">
                 <li>
-                  <img
-                    src="../img/herbert.png"
-                    alt=""
-                    class="img-details"
-                    style="height: 34%"
-                  />
-                  <div
-                    class="details-section container container m-auto text-light py-4"
-                  >
-                    <h1>camera wowo</h1>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Vivamus lacinia odio vitae vestibulum vestibulum.
-                    </p>
-                    <hr />
-                    <h2 class="pe-5">gaza</h2>
-                    <p class="sub-news-details">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Maiores asperiores perspiciatis dolore, laborum ab minus
-                      aliquam eos sapiente adipisci praesentium consequuntur
-                      voluptas quibusdam nemo officia deserunt magnam cupiditate
-                      unde eveniet. Dolor iusto optio neque cum unde. Deserunt,
-                      cupiditate eveniet ut ducimus recusandae architecto animi
-                      hic obcaecati unde rerum, eius tenetur porro ullam
-                      veritatis quibusdam, perferendis fuga quasi perspiciatis!
-                      Voluptatibus, reprehenderit. Id quae enim numquam,
-                      repellendus quam porro, deleniti doloremque unde dolorem
-                      assumenda vitae ex quisquam placeat vel illo totam quaerat
-                    </p>
+                  <div class="cardd">
+                    <a href="#" class="socialContainer containerOne">
+                      <svg class="socialSvg instagramSvg" viewBox="0 0 16 16">
+                        <path
+                          d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                        </path>
+                      </svg>
+                    </a>
+
+                    <a href="#" class="socialContainer containerTwo">
+                      <svg class="socialSvg twitterSvg" viewBox="0 0 16 16">
+                        <path
+                          d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z">
+                        </path>
+                      </svg>
+                    </a>
+
+                    <a href="#" class="socialContainer containerThree">
+                      <svg class="socialSvg linkdinSvg" viewBox="0 0 448 512">
+                        <path
+                          d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                        </path>
+                      </svg>
+                    </a>
+
+                    <a href="#" class="socialContainer containerFour">
+                      <svg class="socialSvg whatsappSvg" viewBox="0 0 16 16">
+                        <path
+                          d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z">
+                        </path>
+                      </svg>
+                    </a>
                   </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <h4 class="pb-3">ABOUT</h4>
+
+            <div class="social">
+              <ul class="social-list">
+                <li>
+                  <a href="#">History</a>
+                </li>
+                <li>
+                  <a href="#">Our Team</a>
+                </li>
+                <li>
+                  <a href="#">Brand Guidelines</a>
+                </li>
+                <li>
+                  <a href="#">Terms & Condition</a>
+                </li>
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <h4 class="pb-3">Services</h4>
+
+            <div class="social">
+              <ul class="social-list">
+                <li>
+                  <a href="#">How to Order</a>
+                </li>
+                <li>
+                  <a href="#">Our Product</a>
+                </li>
+                <li>
+                  <a href="#">Brand Guidelines</a>
+                </li>
+                <li>
+                  <a href="#">Terms & Condition</a>
+                </li>
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <h4 class="pb-3">Other</h4>
+
+            <div class="social">
+              <ul class="social-list">
+                <li>
+                  <a href="#">Help</a>
+                </li>
+                <li>
+                  <a href="#">Privacy</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-      <!-- ---------------------------------------- -->
+    </div>
+    <div class="copy w-100 p-4 text-center text-light">
+      <span class="">&copy; 2024 Hamza Hushki. All rights reserved.</span>
+    </div>
+  </footer>
+  <!-- --//FOOTER//-- -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      AOS.init();
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="../js/index.js"></script>
+</body>
 
-      <div class="slider-news-btn">
-        <ul id="synced-slider" class="p-0 d-flex justify-content-between">
-          <li>
-            <div class="img-news-btn-wrapper">
-              <img src="../img/gaza.jpg" alt="" class="i" />
-            </div>
-          </li>
-          <li>
-            <div class="img-news-btn-wrapper">
-              <img src="../img/amr.jpg" alt="" class="i" />
-            </div>
-          </li>
-          <li>
-            <div class="img-news-btn-wrapper">
-              <img
-                src="../img/ronaldinho-ac-milan-2010_2448415.jpg"
-                alt=""
-                class="i"
-              />
-            </div>
-          </li>
-          <li>
-            <div class="img-news-btn-wrapper">
-              <img src="../img/herbert.png" alt="" class="i" />
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!--// hot news //-->
-    <!-- grid-news -->
-
-    <!--// grid-news //-->
-
-    <!-- --FOOTER-- -->
-    <footer>
-      <div class="about" style="overflow: hidden">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-6">
-              <h4 class="pb-3">Musicology</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at
-                dignissim enim.
-              </p>
-              <div class="social">
-                <ul class="social-list d-flex">
-                  <li>
-                    <div class="cardd">
-                      <a href="#" class="socialContainer containerOne">
-                        <svg class="socialSvg instagramSvg" viewBox="0 0 16 16">
-                          <path
-                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
-                          ></path>
-                        </svg>
-                      </a>
-
-                      <a href="#" class="socialContainer containerTwo">
-                        <svg class="socialSvg twitterSvg" viewBox="0 0 16 16">
-                          <path
-                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
-                          ></path>
-                        </svg>
-                      </a>
-
-                      <a href="#" class="socialContainer containerThree">
-                        <svg class="socialSvg linkdinSvg" viewBox="0 0 448 512">
-                          <path
-                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
-                          ></path>
-                        </svg>
-                      </a>
-
-                      <a href="#" class="socialContainer containerFour">
-                        <svg class="socialSvg whatsappSvg" viewBox="0 0 16 16">
-                          <path
-                            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
-                          ></path>
-                        </svg>
-                      </a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-2">
-              <h4 class="pb-3">ABOUT</h4>
-
-              <div class="social">
-                <ul class="social-list">
-                  <li>
-                    <a href="#">History</a>
-                  </li>
-                  <li>
-                    <a href="#">Our Team</a>
-                  </li>
-                  <li>
-                    <a href="#">Brand Guidelines</a>
-                  </li>
-                  <li>
-                    <a href="#">Terms & Condition</a>
-                  </li>
-                  <li>
-                    <a href="#">Privacy Policy</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-2">
-              <h4 class="pb-3">Services</h4>
-
-              <div class="social">
-                <ul class="social-list">
-                  <li>
-                    <a href="#">How to Order</a>
-                  </li>
-                  <li>
-                    <a href="#">Our Product</a>
-                  </li>
-                  <li>
-                    <a href="#">Brand Guidelines</a>
-                  </li>
-                  <li>
-                    <a href="#">Terms & Condition</a>
-                  </li>
-                  <li>
-                    <a href="#">Privacy Policy</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-2">
-              <h4 class="pb-3">Other</h4>
-
-              <div class="social">
-                <ul class="social-list">
-                  <li>
-                    <a href="#">Help</a>
-                  </li>
-                  <li>
-                    <a href="#">Privacy</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="copy w-100 p-4 text-center text-light">
-        <span class="">&copy; 2024 Hamza Hushki. All rights reserved.</span>
-      </div>
-    </footer>
-    <!-- --//FOOTER//-- -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      async
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
-      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        AOS.init();
-      });
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script src="../js/index.js"></script>
-  </body>
 </html>

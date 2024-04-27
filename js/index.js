@@ -216,3 +216,35 @@ $("#synced-slider").slick({
   centerMode: true,
   focusOnSelect: true,
 });
+$(document).ready(function () {
+  $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav'
+  });
+  $('.slider-nav').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: false,
+    centerMode: true,
+    focusOnSelect: true
+  });
+});
+/////////////////////////////
+function calculatePrice(displayId, perDay) {
+  var startDate = new Date(document.getElementById(displayId === 'price-display1' ? 'start-date1' : displayId === 'price-display2' ? 'start-date2' : 'start-date3').value);
+  var endDate = new Date(document.getElementById(displayId === 'price-display1' ? 'end-date1' : displayId === 'price-display2' ? 'end-date2' : 'end-date3').value);
+
+  var timeDiff = endDate.getTime() - startDate.getTime();
+  var daysDiff = Math.ceil(timeDiff / (1000 * 3600 * 24));
+  var price = daysDiff * perDay; // Assuming price per day is $10
+
+  document.getElementById(displayId).textContent = 'Price: $' + price;
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
